@@ -1,0 +1,112 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1
+!
+!
+!
+enable secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+!
+!
+!
+!
+!
+aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 10.1.1.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 192.168.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/1
+ network 192.168.1.0 0.0.0.255 area 0
+ network 10.1.1.0 0.0.0.3 area 0
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+!
+!
+parser view admin1
+ secret 5 $1$mERr$ILrAmVhMGbrCFnj8QqS3T.
+ commands exec include configure
+ commands exec include all configure terminal
+ commands exec include all debug
+ commands exec include all show
+!
+parser view admin2
+ secret 5 $1$mERr$Y86euNWSPLMQo.DAj6vGJ0
+ commands exec include all show
+!
+parser view tech
+ secret 5 $1$mERr$QMUdu4f7Qgk/Gy0quE8Eh0
+ commands exec include show
+ commands exec include show interfaces
+ commands exec include show ip
+ commands exec include show ip interface
+ commands exec include show ip interface brief
+ commands exec include show parser
+ commands exec include show parser view
+ commands exec include show version
+!
+!
+end
+
