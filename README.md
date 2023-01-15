@@ -14,12 +14,18 @@
 ### [R1_startup-config.txt](https://github.com/Vallyren/Lab1/blob/main/R1_startup-config.txt)
 ### R2
 ![2023-01-15_13-52-28](https://user-images.githubusercontent.com/122459067/212536542-e706a1b0-b516-4616-b0b7-3d598fbd62ec.png)
-### [R1_startup-config.txt](https://github.com/Vallyren/Lab1/blob/main/R2_startup-config.txt)
+### [R2_startup-config.txt](https://github.com/Vallyren/Lab1/blob/main/R2_startup-config.txt)
 ### R3
 ![2023-01-15_13-54-07](https://user-images.githubusercontent.com/122459067/212536594-ff5a852b-a1c2-4e1d-8d07-717fdb316714.png)
-### [R1_startup-config.txt](https://github.com/Vallyren/Lab1/blob/main/R3_startup-config.txt)
+### [R3_startup-config.txt](https://github.com/Vallyren/Lab1/blob/main/R3_startup-config.txt)
 #####	Configure OSPF routing.
-#####	Configure PC hosts.
+### R1
+![2023-01-15_13-58-46](https://user-images.githubusercontent.com/122459067/212536927-34162694-9b13-48b3-8462-99b00e84f2f8.png)
+### R2
+![2023-01-15_14-03-55](https://user-images.githubusercontent.com/122459067/212537007-f0d11f69-dad6-49f9-b6c2-6e6166a00dce.png)
+### R3
+![2023-01-15_14-05-15](https://user-images.githubusercontent.com/122459067/212537091-9618d412-f2f2-4098-9ef3-0759b51783ac.png)
+##	Configure PC hosts.
 #####	Verify connectivity between hosts and routers.
 #### Part 2: Configure Administrative Roles
 #####	Create multiple role views and grant varying privileges.
