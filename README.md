@@ -57,4 +57,6 @@
 ### l.	Issue the show run command to see the views you created.
 ![2023-01-15_14-48-15](https://user-images.githubusercontent.com/122459067/212538874-f9f16a7f-e594-4cea-be65-eb2ec1e9dcad.png)
 ![2023-01-15_14-53-48](https://user-images.githubusercontent.com/122459067/212539083-320fc894-f9e4-4d30-9614-7d813aac4e14.png)
-#####	Verify and contrast views
+### Save the running configuration to the startup configuration from the privileged EXEC prompt.
+### [R1_startup-config2.txt](https://github.com/Vallyren/Lab1/files/10420073/R1_startup-config2.txt)
+### [R3_startup-config2.txt](https://github.com/Vallyren/Lab1/files/10420074/R3_startup-config2.txt)
